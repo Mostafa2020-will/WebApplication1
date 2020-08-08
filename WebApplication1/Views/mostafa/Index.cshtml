@@ -1,0 +1,31 @@
+﻿@model IEnumerable<WebApplication1.Models.mostafa>
+@{
+    ViewBag.Title = "Index";
+}
+@section scripts{<script type="text/javascript">        </script>
+    }
+<h2>data of mostafa</h2>
+<table class="table table-hover">
+    <tr>
+        <th> id</th>
+        <th>name</th>
+        <th>city</th>
+        <th>email</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+
+
+    <tr>
+        <td>@item.id</td>
+        <td>@item.name</td>
+        <td>@item.city</td>
+        <td>@item.email</td>
+
+
+    </tr>
+    }
+</table>
+    
+
+
